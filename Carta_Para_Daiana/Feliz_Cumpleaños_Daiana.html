@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Feliz Vida Daiana! 💗</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Georgia, serif;
+            background: linear-gradient(135deg, #ffd6e7, #f8c8dc, #e8d5ff);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow-x: hidden;
+        }
+
+        .inicio {
+            text-align: center;
+            background: rgba(255, 255, 255, 0.75);
+            padding: 50px;
+            border-radius: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+            max-width: 500px;
+        }
+
+        .inicio h1 {
+            color: #c94f7c;
+            font-size: 40px;
+            margin-bottom: 20px;
+        }
+
+        .inicio p {
+            color: #6b4b5a;
+            font-size: 20px;
+            margin-bottom: 30px;
+        }
+
+        button {
+            border: none;
+            background: #d96b98;
+            color: white;
+            padding: 15px 30px;
+            border-radius: 30px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background: #bd4f7d;
+            transform: scale(1.08);
+        }
+
+        .carta {
+            display: none;
+            width: 90%;
+            max-width: 800px;
+            background: rgba(255,255,255,0.92);
+            padding: 50px;
+            border-radius: 25px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+            animation: aparecer 1.5s ease;
+        }
+
+        .carta h1 {
+            text-align: center;
+            color: #c94f7c;
+            margin-bottom: 30px;
+        }
+
+        .carta p {
+            color: #55404a;
+            font-size: 18px;
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+
+        .final {
+            text-align: center;
+            color: #c94f7c !important;
+            font-weight: bold;
+            font-size: 21px !important;
+            margin-top: 30px;
+        }
+
+        @keyframes aparecer {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .corazon {
+            position: fixed;
+            bottom: -20px;
+            font-size: 25px;
+            animation: subir 5s linear infinite;
+            opacity: 0.7;
+        }
+
+        @keyframes subir {
+            from {
+                transform: translateY(0);
+                opacity: 0.8;
+            }
+
+            to {
+                transform: translateY(-110vh);
+                opacity: 0;
+            }
+        }
+        .foto {
+    display: block;
+    width: 350px;
+    height: 250px;
+    object-fit: cover;
+    margin: 0 auto 30px auto;
+
+    border-radius: 25px;
+
+    border: 5px solid #f4a6c1;
+
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+@media (max-width: 600px) {
+
+    .inicio {
+        width: 90%;
+        padding: 35px 20px;
+    }
+
+    .inicio h1 {
+        font-size: 30px;
+    }
+
+    .inicio p {
+        font-size: 17px;
+    }
+
+    .carta {
+        width: 92%;
+        padding: 30px 20px;
+        margin: 20px auto;
+    }
+
+    .carta h1 {
+        font-size: 27px;
+    }
+
+    .carta p {
+        font-size: 16px;
+        line-height: 1.7;
+    }
+
+    .foto {
+        width: 100%;
+        height: 220px;
+        border-radius: 25px;
+    }
+
+    button {
+        font-size: 16px;
+        padding: 13px 25px;
+    }
+}
+
+    </style>
+</head>
+
+<body>
+
+    <!-- PANTALLA INICIAL -->
+
+    <div class="inicio" id="inicio">
+
+        <h1>💌 Feliz Cumpleaños Daii! 💌</h1>
+
+        <p>
+            Tengo unas palabras que quería decirte...
+        </p>
+
+        <button onclick="abrirCarta()">
+            Abrir carta 💗
+        </button>
+
+    </div>
+
+<audio id="musica" loop>
+    <source src="audio_fondo.mpeg" type="audio/mpeg">
+</audio>
+    <!-- CARTA -->
+
+    <div class="carta" id="carta">
+
+        <img src="Foto_chicas.jpeg" alt="Nuestra foto" class="foto">
+        <h1>Para una buena amiga 💗</h1>
+
+        <p>
+            Quería escribirte estas palabras porque siento que hay cosas
+            que a veces no decimos lo suficiente, y vos sos una de esas
+            personas a las que realmente quiero agradecer.
+        </p>
+
+        <p>
+            Quiero que sepas que fuiste una gran amiga durante la secundaria.
+            Me quedo con todos los momentos, las risas, las charlas y cada
+            pequeño recuerdo que compartimos.
+        </p>
+
+        <p>
+            Aunque quizás no nos conocimos desde hace tantos años como otras
+            personas, siempre tuve esa sensación de que nuestra amistad venía
+            de mucho antes, como si te conociera desde hace muchísimo tiempo.
+        </p>
+
+        <p>
+            Para mí nunca fuiste solamente una amiga. Siempre sentí que eras
+            como una <strong>amiga-hermana</strong>, de esas personas con las
+            que uno puede sentirse cómodo siendo uno mismo.
+        </p>
+
+        <p>
+            Y también podría decir que fuiste un poquito mi
+            <strong>"mami"</strong> jajaja, por asi decirlo, por esa forma tuya de cuidar y
+            estar pendiente de los demás. Esa forma tan especial que tenés
+            de ser.
+        </p>
+
+        <p>
+            Y justamente eso es algo que espero que nunca cambies:
+            <strong>tu manera tan única de ser vos misma.</strong>
+        </p>
+
+        <p>
+            No dejes que nadie te haga sentir que tenés que cambiar para
+            encajar o para gustarle a los demás. Esa personalidad tuya,
+            esa forma de cuidar, de hacer reír y de estar para las personas
+            es justamente lo que te hace tan especial.
+        </p>
+
+        <p>
+            Me alegra muchísimo haber coincidido con vos en esta etapa de
+            nuestras vidas. Quizás la secundaria termine y cada una siga
+            su propio camino, pero espero que eso nunca haga que nuestra
+            amistad se pierda.
+        </p>
+
+        <p>
+            Te quiero muchísimo y siempre voy a guardar un pedacito de
+            nuestra secundaria con mucho cariño. Lamento no poder asistir a tu sorpresa
+            pero me alegra saber que tenes amigos y amigas que te quieren y aprecian muchisimo. 💗
+        </p>
+
+        <p class="final">
+            Nunca cambies esa forma tan única de ser vos. 🫶🏻
+        </p>
+
+        <p class="final">
+            "No hace falta conocerse desde hace años para sentir que alguien
+            forma parte de tu vida desde siempre." 💕
+        </p>
+
+    </div>
+
+
+    <script>
+
+       function abrirCarta() {
+
+    document.getElementById("inicio").style.display = "none";
+
+    document.getElementById("carta").style.display = "block";
+
+    let musica = document.getElementById("musica");
+
+    musica.play();
+
+    crearCorazones();
+}
+
+
+        function crearCorazones() {
+
+            setInterval(function() {
+
+                let corazon = document.createElement("div");
+
+                corazon.classList.add("corazon");
+
+                corazon.innerHTML = "💗";
+
+                corazon.style.left = Math.random() * 100 + "vw";
+
+                corazon.style.animationDuration =
+                    (Math.random() * 3 + 3) + "s";
+
+                document.body.appendChild(corazon);
+
+                setTimeout(function() {
+
+                    corazon.remove();
+
+                }, 6000);
+
+            }, 500);
+
+        }
+
+    </script>
+
+</body>
+</html>
